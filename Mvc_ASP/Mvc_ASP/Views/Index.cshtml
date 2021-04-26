@@ -1,0 +1,13 @@
+﻿@using Mvc_ASP.Models
+@model MiModelo
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="jumbotron">
+    <h1>Ejemplo de modelo</h1>
+    <p>@Html.LabelFor(m=>m.Nombre):@Model.Nombre</p>
+    <p>@Html.LabelFor(m=>m.Apellidos):@Model.Apellidos</p>
+    <p>@Html.LabelFor(m=>m.Edad):@Model.Edad</p>
+</div>
